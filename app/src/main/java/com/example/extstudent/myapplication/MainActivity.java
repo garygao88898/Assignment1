@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.util.Log;
+import java.util.Random;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,10 +33,17 @@ public class MainActivity extends AppCompatActivity {
         this.submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void OnClick(View v) {
+                Log.d (tag: "First Name:", firstName);
+                Log.d (tag: "Last Name:", lastName);
+                showResult();
 
             }
         });                                    }
 
+        private void setUserInfo() {
+         String resultSt= "Hi, nice to meet you " + firstName + " "+ lastName;
+         this.resultTextView.setText(resultText);
+        }
         TextView text = (TextView)findViewById(R.id.textViewTitle);
                 text.setTextColor(getResources().getColor(R.color.color1));
     }
