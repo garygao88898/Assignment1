@@ -10,27 +10,27 @@
         android:id="@+id/textViewTitle"
         android:layout_width="265dp"
         android:layout_height="97dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="72dp"
         android:text="Hi, There! How are you?"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal"
         app:fontFamily="sans-serif"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextFirstName"
-        android:layout_width="355dp"
+        android:layout_width="368dp"
         android:layout_height="69dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="First Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
@@ -42,8 +42,10 @@
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
-        tools:layout_editor_absoluteX="13dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
 
     <Button
         android:id="@+id/button"
